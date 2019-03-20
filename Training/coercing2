@@ -1,0 +1,12 @@
+// A simple code to turning an integer into a string
+
+var real = 10.99;
+real *= 2;
+
+console.log(real) // 21.98 
+
+// convert the number stored in "real" to a string,
+// then add R$ at the beggining of it
+real = "R$" + String(real);
+
+console.log(real);      // "R$21.98"

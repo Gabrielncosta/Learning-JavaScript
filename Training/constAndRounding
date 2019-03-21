@@ -1,0 +1,20 @@
+const imposto = 0.36;
+var bank_balance = 125.00;
+var amount = 89.99;
+
+imposto *= 2; // it won't change because var "imposto" is a constant
+
+amount = amount + (amount * imposto);
+
+amount = (amount.toFixed(2)); // specify how many decimal places i'd like the number rounded to
+
+if (amount < bank_balance)
+{
+    console.log("I'll take it!");
+    bank_balance -= amount;
+}
+
+else
+{
+    console.log("No, thanks.");
+}

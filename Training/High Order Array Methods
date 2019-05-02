@@ -1,0 +1,43 @@
+// high order array methods (iteration with arrays)
+
+const todos = [
+    {
+        id:1,
+        text: 'Take out trash',
+        isCompleted: true
+    },
+    {
+        id: 2,
+        text: 'Meeting with boss',
+        isCompleted: true
+    },
+    {
+        id: 3,
+        text: 'Dentist appt',
+        isCompleted: false
+    },
+];
+
+// forEach (just loops throught them)
+
+todos.forEach(function(todo){
+    console.log(todo.text);
+});
+
+
+// loop through then map returns an array (create a new array out of an array)
+
+const todoText = todos.map(function(todo) { 
+    return todo.text; // return an array with just the text values of the original array
+});
+
+console.log(todoText);  
+
+
+
+// filter (creates a new array based in a condition)
+const todoCompleted = todos.filter(function(todo) { 
+    return todo.isCompleted === true; //just want to return the todos that are isCompleted: true
+});
+
+console.log(todoCompleted);

@@ -37,7 +37,7 @@ console.log(todoText);
 
 // filter (creates a new array based in a condition)
 const todoCompleted = todos.filter(function(todo) { 
-    return todo.isCompleted === true; //just want to return the todos that are isCompleted: true
+    return todo.isCompleted === true; //return the 'todos' that are "isCompleted = true"
 });
 
 console.log(todoCompleted);

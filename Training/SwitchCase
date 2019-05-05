@@ -1,0 +1,22 @@
+let user = prompt("Login: ");
+
+switch (user) {
+    case "Admin":
+        let pass = prompt("Password: ");
+            switch(pass) {
+                case "TheMaster":
+                    alert("Welcome!");
+                    break;
+                case null || '':
+                    alert("Canceled1");
+                    break;
+                default:
+                    alert("Wrong password");
+            }
+            break;
+    case null || '':
+        alert("Canceled2");
+        break;
+    default:
+        alert("I don't know you");
+}
